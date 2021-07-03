@@ -1,6 +1,6 @@
 print('')
 print('~~WELCOME TO THE CASINO TERMINAL.... '
-      '\n ..THE ALL NEW GAMING PLATFORM!! ')
+      '\n ..THE ALL NEW GAMING PLATFORM! ')
 a = str(input('\n ~~Please enter your name: '))
 print("\n ~~HELLO",a,'Hope you have good luck today and return with a heavier bag :) \n ')
 print('Enter 1 for Playing the gambling 7UP 7DOWN Game \n')
