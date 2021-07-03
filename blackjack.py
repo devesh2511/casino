@@ -1,8 +1,7 @@
 import random
-import os
-import time
 
-import you as you
+
+
 
 print('')
 print('Basic Blackjack Rules:')
@@ -28,9 +27,7 @@ class Card:
         self.card_value = card_value
 
 
-# Clear the terminal
-def clear():
-    os.system("clear")
+
 
 
 # Function to print the cards
@@ -152,7 +149,7 @@ def blackjack_game(deck):
     player_score = 0
     dealer_score = 0
 
-    clear()
+
 
     # Initial dealing for player and dealer
     while len(player_cards) < 2:
@@ -209,7 +206,7 @@ def blackjack_game(deck):
         print("PLAYER WINS!!!!")
         quit()
 
-    clear()
+
 
     # Print dealer and player cards
     print("DEALER CARDS: ")
@@ -228,7 +225,7 @@ def blackjack_game(deck):
 
         # Sanity checks for player's choice
         if len(choice) != 1 or (choice.upper() != 'H' and choice.upper() != 'S'):
-            clear()
+
             print("Wrong choice!! Try Again")
 
         # If player decides to HIT
@@ -252,7 +249,7 @@ def blackjack_game(deck):
                 else:
                     c += 1
 
-            clear()
+
 
             # Print player and dealer cards
             print("DEALER CARDS: ")
@@ -269,7 +266,7 @@ def blackjack_game(deck):
         if choice.upper() == 'S':
             break
 
-    clear()
+
 
     # Print player and dealer cards
     print("PLAYER CARDS: ")
@@ -297,7 +294,7 @@ def blackjack_game(deck):
 
     # Managing the dealer moves
     while dealer_score < 17:
-        clear()
+
 
         print("DEALER DECIDES TO HIT.....")
 
